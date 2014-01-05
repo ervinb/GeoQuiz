@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity"
+    tools:ignore="MergeRootFrame" >
+    
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerHorizontal="true"
+              android:layout_centerVertical="true"
+              android:text="@string/hello_world"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/question_text"/>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="horizontal">
+
+            <Button android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/true_button" />
+
+            <Button android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/false_button" />
+        </LinearLayout>
+
+    </LinearLayout>
+ </RelativeLayout>
