@@ -1,37 +1,33 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".QuizActivity"
-    tools:ignore="MergeRootFrame" >
-    
-    <TextView android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:layout_centerHorizontal="true"
-              android:layout_centerVertical="true"
-              android:text="@string/hello_world"/>
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="bottom"
-            android:orientation="vertical">
-        <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/question_text"/>
-        <LinearLayout android:layout_width="match_parent"
-                      android:layout_height="match_parent"
-                      android:orientation="horizontal">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+    <TextView
+            android:id="@+id/question_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="24dp"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:orientation="horizontal">
 
-            <Button android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/true_button" />
+        <Button android:layout_width="wrap_content"
+                android:id="@+id/true_button"
+                android:layout_height="wrap_content"
+                android:text="@string/true_button" />
 
-            <Button android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/false_button" />
-        </LinearLayout>
-
+        <Button android:layout_width="wrap_content"
+                android:id="@+id/false_button"
+                android:layout_height="wrap_content"
+                android:text="@string/false_button" />
     </LinearLayout>
- </RelativeLayout>
+
+    <Button android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next_question_button"/>
+
+</LinearLayout>
